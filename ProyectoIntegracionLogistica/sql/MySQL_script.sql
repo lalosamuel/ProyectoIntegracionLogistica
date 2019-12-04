@@ -1,10 +1,10 @@
-create database contactdb;
+create database integracion;
 
-CREATE TABLE `contact` (
-  `contact_id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(45) NOT NULL,
-  `email` varchar(45) NOT NULL,
-  `address` varchar(45) NOT NULL,
-  `telephone` varchar(45) NOT NULL,
-  PRIMARY KEY (`contact_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8
+CREATE TABLE `producto` (
+  `producto_id` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(100) DEFAULT NULL,
+  `descripcion` varchar(255) DEFAULT NULL,
+  `categoria` varchar(100) DEFAULT NULL,
+  `estado` varchar(1) DEFAULT NULL,
+  PRIMARY KEY (`producto_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=latin1;
