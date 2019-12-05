@@ -118,8 +118,45 @@
 					<target>${java.version}</target>
 				</configuration>
 			</plugin>
+			
+			
+			
+			
+			<plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>2.6</version>
+            </plugin>
+            
+            
+			
 		</plugins>
 	</build>
+	
+	
+	
+	
+	<profiles>
+        <profile>
+            <id>sonar</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                
+                <sonar.host.url>http://localhost:9000</sonar.host.url>
+            </properties>
+        </profile>
+        
+        
+    </profiles>
+	
+	
+	
+	
+	
+	
+	
 	
 	
 </project>

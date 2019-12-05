@@ -24,7 +24,7 @@ class ProductoDAOTest {
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
 		dataSource.setUrl("jdbc:mysql://localhost:3306/integracion");
 		dataSource.setUsername("root");
-		dataSource.setPassword("");
+		dataSource.setPassword("123456");
 		dao=new ProductoDAOImpl(dataSource);
 	}
 		
