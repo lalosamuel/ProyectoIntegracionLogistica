@@ -16,7 +16,7 @@ public class PaginaModificarProductoTest {
 	void setUp() throws Exception {
 		paginaModificarProducto = new PaginaModificarProducto(driver);
 		driver = paginaModificarProducto.chromeDriverConnection();
-		paginaModificarProducto.visit("http://localhost:8082/ProyectoIntegracionLogistica/");
+		paginaModificarProducto.visit("http://localhost:8080/ProyectoIntegracionLogistica/");
 		
 	}
 

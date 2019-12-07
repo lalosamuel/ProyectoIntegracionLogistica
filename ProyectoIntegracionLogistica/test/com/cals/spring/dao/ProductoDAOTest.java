@@ -42,7 +42,7 @@ class ProductoDAOTest {
 	@Test
 	void testEditar() {
 		
-		Producto producto=new Producto(40,"Leche Deslactosada","Leche gloria en Caja","Lacteos","2");
+		Producto producto=new Producto(22,"Leche Deslactosada","Leche gloria en Caja","Lacteos","2");
 		int resultado = dao.editar(producto);
 		assertTrue(resultado>0);
 		
@@ -52,7 +52,7 @@ class ProductoDAOTest {
 	@Test
 	void testObtener() {
 		
-		Integer id=2;
+		Integer id=22;
 		Producto producto =dao.obtener(id);
 		if(producto!=null)
 		{
@@ -66,7 +66,7 @@ class ProductoDAOTest {
 	@Test
 	void testBorrar() {
 		
-		Integer id=3;
+		Integer id=24;
 		int result=dao.borrar(id);
 		
 		assertTrue(result>0);
